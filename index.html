@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- ๒ยเɭՇ เภ ςђг๏๓คՇเςค -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="#CANCELCOVID"/>
+    <meta property="og:description" content="Let’s do something about #coronavirus (COVID-19)! Click this link to contact your representatives, make your voice heard, and demand action."/>
+    <meta property="og:url" content="https://cancelcovid.info"/>
+    <meta property="og:image" content="https://cancelcovid.info/img/social.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta name="twitter:title" content="#CANCELCOVID">
+    <meta name="twitter:description" content="Let’s do something about #coronavirus (COVID-19)! Click this link to contact your representatives, make your voice heard, and demand action.">
+    <meta name="twitter:image" content="https://cancelcovid.info/img/social.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>#CANCELCOVID — Demand Action</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 10px;
+      }
+      @media (max-width: 1200px) {
+        html {
+          font-size: 8.5px;
+        }
+      }
+      @media (max-width: 700px) {
+        html {
+          font-size: 7px;
+        }
+      }
+      body {
+        margin: 0;
+        padding-bottom: 20rem;
+      }
+      header {
+        padding-top: 3rem;
+        height: 100vh;
+        max-height: 75vw;
+        box-sizing: border-box;
+        position: relative;
+        background: #EA40DB;
+      }
+      .hashtag {
+        background: black;
+        color: white;
+        text-transform: uppercase;
+        position: fixed;
+        top: 3.5rem;
+        left: 3.5rem;
+        padding: 1rem 2rem;
+        font-size: 3rem;
+        z-index: 1;
+      }
+      .pickets {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      @media (max-width: 1200px) {
+        .pickets {
+          transform: scale(0.7);
+        }
+      }
+      @media (max-width: 700px) {
+        .pickets {
+          transform: scale(0.4);
+        }
+      }
+      .picket {
+        position: absolute;
+        padding: 3.5rem;
+        top: 50%;
+        left: 50%;
+        border: .7rem solid black;
+        text-align: center;
+        font-size: 6.8rem;
+        text-transform: uppercase;
+        line-height: 6rem;
+      }
+      .picket::after {
+        content: '';
+        height: 7.5rem;
+        width: 2.5rem;
+        display: block;
+        background: black;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .picket.primary {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background: white;
+        font-weight: 600;
+        transform: translate(-50%, -50%);
+      }
+      .picket.primary span {
+        margin-top: 2rem;
+        display: block;
+        white-space: nowrap;
+        font-size: 2.6rem;
+      }
+      @keyframes picket-secondary {
+        from {
+          transform: translate(-50%, -50%) rotate(-5deg) translateY(-4rem);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(-5deg) translateY(4rem);
+        }
+      }
+      .picket.secondary {
+        margin-left: -34rem;
+        background: #FFFD54;
+        animation: picket-secondary 1s ease-in-out infinite alternate;
+      }
+      @keyframes picket-tertiary {
+        from {
+          transform: translate(-50%, -50%) rotate(5deg) translateY(4rem);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(5deg) translateY(-4rem);
+        }
+      }
+      .picket.tertiary {
+        margin-left: 38rem;
+        background: #7EEE4B;
+        font-weight: 600;
+        font-style: italic;
+        animation: picket-tertiary 1.3s ease-in-out infinite alternate;
+      }
+      section {
+        margin: 0 auto;
+        padding: 5rem;
+        padding-left:30rem;
+        max-width: 75rem;
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+      }
+      @media (max-width: 1200px) {
+        section {
+          padding: 7.5rem;
+        }
+      }
+      @media (max-width: 700px) {
+        section {
+          padding: 5rem;
+        }
+      }
+      section h1 {
+        font-style: italic;
+        font-weight: 700;
+        font-size: 3.5rem;
+      }
+      section a:not(.image-link), section button {
+        padding: 0.35rem 0.75rem;
+        background: #FFFD54;
+        color: black;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      section a:not(.image-link):hover, section button:hover,
+      section a:not(.image-link):active, section button:active {
+        color: #FFFD54;
+        background: black;
+      }
+      section button {
+        border: 0;
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: pointer;
+      }
+      section img {
+        width: 100%;
+      }
+      .letter {
+        position: relative;
+        background: #EFEFEF;
+        padding: 5rem;
+      }
+      @media (max-width: 700px) {
+        .letter {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+      }
+      .letter::before, .letter::after {
+        position: absolute;
+        color: white;
+        font-size: 6rem;
+      }
+      .letter::before {
+        content: '“';
+        top: 2.5rem;
+        left: 2rem;
+      }
+      .letter::after {
+        content: '”';
+        bottom: 2.5rem;
+        right: 2rem;
+      }
+      .formatted {
+        display: none;
+      }
+      .copy {
+        font-size: 2.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="pickets">
+        <div class="picket primary">
+          Corona<br/>Virus<br/>Is<br/>Over!
+          <span>If You Want It</span>
+        </div>
+        <div class="picket secondary">Stay<br/>Home</div>
+        <div class="picket tertiary">Demand<br/>Action</div>
+      </div>
+      <a href="https://twitter.com/search?q=%23cancelcovid"><div class="hashtag">#cancelcovid</div></a>
+    </header>
+    <section>
+      <p>
+        Let’s do something about COVID-19, notoriously known as coronavirus.
+        Other countries have been successful by limiting the spread of the virus
+        by enacting quarantine measures. By reducing the number of cases, we can
+        save millions of lives including the most at-risk members of our population:
+        the immunocompromised, the elderly, and infants. We need the United States
+        to take these measures, and we the people need to demand it.
+      </p>
+    </section>
+    <section>
+      <h1>What are quarantine measures?</h1>
+      <p>
+        Limiting social interaction as much as possible! Quarantine measures
+        include prohibiting people from going to school, workplaces,
+        public gatherings, and any other unnecessary travel.
+        Visit <a href="https://staythefuckhome.com/">Staythefuckhome.com</a>
+        for self-quarantine tips.
+      </p>
+    </section>
+    <section>
+      <h1>Quarantine is effective!</h1>
+      <p>
+        After China implemented its quarantine, new cases of
+        COVID-19 dropped significantly. Japan and South Korea have also seen
+        success in lowering the rate of infection.
+        Marc Bevand is updating charts on COVID-19 case reports globally
+        on his Twitter account: <a href="https://twitter.com/zorinaq/status/1239781421398388737?s=20">@zorinaq</a>
+      </p>
+    </section>
+    <section>
+      <h1>It is important!</h1>
+      <p>
+        While the spread of the virus is inevitable, slowing down the spread
+        is important to prevent overwhelming hospital resources. If too many
+        people flood hospitals, people who would have otherwise recovered quickly,
+        have to wait longer to receive care. By limiting the spread over time,
+        we can significantly reduce the number of lives impacted.<br /><br />
+
+        This is known as <a href="https://www.flattenthecurve.com">flattening the curve</a>.<br /><br />
+
+        Check out this virus spread simulation by The Washington Post: <a href="https://www.washingtonpost.com/graphics/2020/world/corona-simulator/">Corona Simulator</a><br /><br />
+
+        <a class="image-link" target="_blank" href="https://cdn.vox-cdn.com/thumbor/ERzyiRuCEEzy9jUbofU4Uv083eY=/0x0:1497x841/1720x0/filters:focal(0x0:1497x841):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19780273/flattening_the_curve_final.jpg">
+          <img src="https://cdn.vox-cdn.com/thumbor/ERzyiRuCEEzy9jUbofU4Uv083eY=/0x0:1497x841/1720x0/filters:focal(0x0:1497x841):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19780273/flattening_the_curve_final.jpg" alt="Graph showing a lower maximum infection count if we utilize social distancing.">
+        </a>
+      </p>
+    </section>
+    <section>
+      <h1>You can help!</h1>
+      <p>
+        Contact your government representatives and tell them to take action!
+        Below is a sample letter and instructions on how to find and
+        contact your representatives.
+      </p>
+    </section>
+    <section>
+      <h1>Contact your representatives.</h1>
+      <p>
+        Visit <a href="http://myreps.datamade.us/">myreps.datamade.us</a>
+        or <a href="https://commoncause.org/">commoncause.org</a> to look up
+        your congressperson, both of your senators, as well as your state
+        senators and representatives.
+
+        Make your voice heard! Call your representatives!
+      </p>
+    </section>
+    <section>
+      <h1>
+        What to say:
+        <button class="copy">
+          Copy to clipboard
+        </button>
+      </h1>
+      <div class="letter">
+        Hello Senator/Congressperson [Name], in order to reduce the spread of COVID-19,
+        I urge you to help enact quarantine measures, the faster we act,
+        the more lives we can save.<br /><br />
+
+        It is critical and time-sensitive to enact the following:
+        <ul>
+          <li>Close schools, workplaces, prohibit public gatherings and ban any unnecessary travel.</li>
+          <li>Free and accessible testing and treatment for Coronavirus</li>
+          <li>Close down all bars, dine-in restaurants, gyms, and theaters nationwide</li>
+          <li>Ask for and accept help from the Chinese government and/or any outside government who
+              has successfully battled the pandemic</li>
+          <li>Impose eviction moratoriums nationwide</li>
+          <li>Nationwide rent freezes</li>
+          <li>A medium-term relief solution to offset a pending ripple of missed rent/mortgage payments</li>
+          <li>Paid sick leave for all workers</li>
+          <li>Emergency Universal/Unconditional Basic Income</li>
+        </ul>
+        <pre class="formatted">Hello Senator/Congressperson [Name], in order to reduce the spread of COVID-19, I urge you to help enact quarantine measures, the faster we act, the more lives we can save.
+It is critical and time-sensitive to enact the following:
+- Close schools, workplaces, prohibit public gatherings and ban any unnecessary travel.
+- Free and accessible testing and treatment for Coronavirus
+- Close down all bars, dine-in restaurants, gyms, and theaters nationwide
+- Ask for and accept help from the Chinese government and/or any outside government who has successfully battled the pandemic
+- Impose eviction moratoriums nationwide
+- Nationwide rent freezes
+- A medium-term relief solution to offset a pending ripple of missed rent/mortgage payments
+- Paid sick leave for all workers
+- Emergency Universal/Unconditional Basic Income</pre>
+      </div>
+    </section>
+    <section>
+      <h1>Get the word out!</h1>
+      <p>
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//cancelcovid.info">Share on Facebook</a>
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Let's%20do%20something%20about%20%23coronavirus%20%28COVID%2D19%29%21%20Click%20this%20link%20to%20contact%20your%20representatives,%20make%20your%20voice%20heard%2C%20and%20demand%20action%2E%20https%3A//cancelcovid.info%20%23cancelcovid">Share on Twitter</a>
+      </p>
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script data-account="qe6Lwi6EdO" src="https://cdn.userway.org/widget.js"></script>
+  <script>
+    window.onload = function() {
+      var clip = new ClipboardJS('.copy', {
+        text: function() {
+          return document.getElementsByClassName('formatted')[0].innerText;
+        }
+      });
+      clip.on('success', function(e) {
+        var old = e.trigger.innerText;
+        e.trigger.innerText = 'Copied!';
+        setTimeout(function() {
+          e.trigger.innerText = old;
+        }, 2000);
+      });
+      clip.on('error', function(e) {
+        var old = e.trigger.innerText;
+        e.trigger.innerText = 'Error!';
+        setTimeout(function() {
+          e.trigger.innerText = old;
+        }, 2000);
+      });
+    };
+  </script>
+</html>
